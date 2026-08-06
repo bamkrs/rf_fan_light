@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up RF Fan Light Buttons",
+        "description": "Configure the serial port connected to your RF transmitter hardware.",
+        "data": {
+          "port": "Serial port",
+          "baudrate": "Baud rate",
+          "write_timeout": "Write/ACK timeout in seconds"
+        },
+        "data_description": {
+          "port": "Use a stable path when possible, for example /dev/serial/by-id/usb-... instead of /dev/ttyUSB0.",
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not open the serial port.",
+      "port_not_found": "The serial port was not found.",
+      "unknown": "Unexpected error. Check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "This serial port is already configured."
+    }
+  }
+}
